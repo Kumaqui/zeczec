@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘖嘖募資平台</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/design.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo-02.svg" width="30px" class="me-1 logo-run" id="logo-run">
+                <img src="./img/logo-01.svg" width="40px">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="explore.html">探索</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proposal.html">提案</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex" role="search">
+                    <a href="login.html" class="nav-btn nav-btn-outline-success me-2" type="submit">登入</a>
+                    <a href="login.html" class="nav-btn nav-btn-outline-success me-2" type="submit">註冊</a>
+                    <a href="login.html" class="nav-btn nav-btn-outline-success me-2 fb-btn" type="submit">Facebook 登入</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首要介紹 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+
+                <iframe class="col-12 " height="315" src="https://www.youtube.com/embed/8P8EShxVqXE"
+                    title="地表最強餵食器｜霍曼Homerunpet智能寵物餵食器，寵物準時放飯就靠他！" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="d-flex align-items-center">
+                    <div class="input-group input-group-sm col">
+                        <span class="input-group-text">分享網址
+                            <i class="bi bi-question-circle-fill fs-08" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="right"
+                                data-bs-content="用這個網址邀請你的朋友們一起贊助，就會留下推薦人記錄！">
+
+                            </i>
+                        </span>
+                        <input type="text" class="form-control"
+                            value="https://www.youtube.com/watch?v=fs03UzIcank&t=9s">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <i class="bi bi-stickies-fill"></i>
+                        </button>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-success btn-sm col-auto ms-2 ">追蹤專案</button>
+
+                    <i class="bi bi-exclamation-octagon-fill fs-08 ms-2 text-green your-selector"
+                        data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left"
+                        data-bs-content="追蹤後會收到公開的專案更新和計畫結束提醒。"></i>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">預購式專案</a></li>
+                        <li class="breadcrumb-item"><a href="#">科技</a></li>
+                    </ol>
+                    <a href="" class="h6">
+                        【突破950萬】霍曼Homerunpet 智能寵物餵食器｜不在家也能準時放飯，毛孩專屬健康飲食守護者
+                    </a>
+                </nav>
+                <p class="fs-08 my-2">
+                    提案人
+                    <a href="" style="color:blue;">霍曼Homerunpet</a>
+                    <a href="#" class="bi bi-browser-edge"></a>
+                    <a href="#" class="bi bi-facebook"></a>
+                    <a href="#" class="bi bi-instagram"></a>
+                </p>
+                <p class="fs-08">
+                    餵養儲糧，一機搞定！毛孩餵食旗艦機種，不在家也能準時放飯，上班、外出也不用擔心毛孩在家會餓肚子。霍曼最強餵食器，放飯就是輕鬆又寫意～
+                </p>
+
+                <p class="fs-08 mb-1"><strong>預購金額</strong></p>
+                <h4 class="mb-1"> <strong>NT$9,665,173</strong></h4>
+                <p class="fs-08 mb-1">目標 NT$50,000</p>
+
+                <hr>
+
+                <p class="mb-1"><small>贊助人數 3,825</small></p>
+                <p class="mb-1"><small>剩餘時間 12 天</small></p>
+                <p class="mb-1"><small>時程 2022/12/13 12:00 – 2023/03/02 02:00</small></p>
+
+                <div class="mt-3">
+                    <button type="button" class="btn btn-sm btn-outline-dark"><i
+                            class="bi bi-chat-left-text-fill"></i>傳送訊息</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary"><i
+                            class="bi bi-share-fill"></i>臉書</button>
+                    <button type="button" class="btn btn-sm btn-outline-info"><i
+                            class="bi bi-share-fill"></i>推特</button>
+                    <button type="button" class="btn btn-sm btn-outline-success"><i
+                            class="bi bi-share-fill"></i>LINE</button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 次導覽列 -->
+    <div class="sticky-top">
+        <div class="border-top border-bottom mt-4 " style="background-color: white;">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-12 col-lg-8 px-sm-0">
+                        <nav class="navbar navbar-expand p-0">
+                            <div class="">
+
+                                <div class="" id="mynavbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="product.html"><small>專案內容</small>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="buy-2.html"><small>專案更新 <strong>4</strong></small> </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="buy-3.html"><small>留言 <strong>26</strong></small>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="buy-4.html"><small>常見問答 <strong>7</strong></small></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 ">
+                        <div class="d-grid gap-2">
+                            <a class="btn btn-outline-success " style="margin: 12px 0px;"
+                                type="button" href="buy-1.html">贊助專案</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="container d-none d-lg-block ">
+            <div class="row">
+                <nav class="nav border border-top-0 col-lg-8  " id="mynav" style="background-color: white;">
+                    <a class="nav-link active" href="#"><i class="bi bi-journal-text"></i></a>
+                    <a class="nav-link" href="#sec-1">風險與挑戰</a>
+                    <a class="nav-link" href="#sec-2">退換貨規則</a>
+                    <a class="nav-link" href="#sec-3">客服聯絡方式</a>
+                    <a class="nav-link" href="#sec-4">營業登記</a>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- 內容介紹 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 mt-3 px-sm-0">
+
+                <div class="border p-3">
+                    <p>計畫更新發佈於
+                        <small> 2023/02/17</small>
+                        <small>
+                            <span class="float-end p-1" style="background-color: rgb(237, 237, 237); ">
+                                <i class="bi bi-lock"></i>只有贊助人看得到這則更新。
+                            </span>
+                        </small>
+                    </p>
+                    <p class="m-0">
+                        🚚 出貨計畫更新，生產進度順利進行中
+                    </p>
+                </div>
+
+                <!-- 圖片介紹海 -->
+                <section class="">
+                    <img src="./img/introduce-1.webp" class="img-fluid" alt="">
+                    <img src="./img/introduce-2.webp" class="img-fluid" alt="">
+                    <img src="./img/introduce-3.webp" class="img-fluid" alt="">
+                </section>
+
+                <section class="pt-navfix" id="sec-1">
+                    <h5 class="mb-3">風險與挑戰</h5>
+                    <p>
+                        欲購買三台以上之消費者，請依照您需購買之數量重覆下單，請勿直接在加碼贊助輸入金額，避免造成訂單錯誤。
+                        <br><br>
+                        產品顏色及色澤或因數位螢幕品牌與設定不同而產生差異，請以實際商品為準。
+                        <br><br>
+                        商品製作完畢後，將會依照預購順序出貨。
+                        <br><br>
+                        商品為預購後下訂生產，可能因原物料缺貨、製作延期、物流延宕等問題造成無法如期出貨，贊助此計畫即代表同意了解其中風險，若仍有疑慮，可於募資結束前聯繫嘖嘖客服中心
+                        support@zeczec.com 取消贊助。
+                    </p>
+
+                </section>
+
+                <section class="pt-navfix" id="sec-2">
+                    <h5 class="mb-3">退換貨規則</h5>
+                    <p>
+                        依《消費者保護法》規定，消費者收到產品後享有七天的鑑賞期，特別提醒【鑑賞期並非試用期】，故產品（含贈品）經拆封使用恕不接受退換貨；拆封使用前請先評估後再行使用
+                        如訂單及商品有任何問題，請務必於七日鑑賞期內主動告知提出退貨申請。
+                        <br><br>
+                        退貨申請務必保持產品為全新狀態且包裝完整(包含外包裝)，並附上原訂購人之購買相關證明（訂購編號、訂購人姓名、電話、發票）如有破損、髒污情況，將影響退換貨權益，恕不得辦理退貨!
+                        <br><br>
+                        【贊助期間欲更改、取消訂單】
+                        結帳完成後，即無法進行購買項目的修改，如需更改項目，建議您直接重新購買欲購入的品項後（避免錯過限量），再取消不需要的訂單！
+                        取消訂單的方式：寫信到嘖嘖客服 support@zeczec.com，提供贊助編號，告知您要取消此筆訂單，嘖嘖小幫手就會協助退款。
+
+                    </p>
+                </section>
+
+                <section class="pt-navfix" id="sec-3">
+                    <h5 class="mb-3">客服聯絡方式</h5>
+                    <p>
+                        客服時間週一至週五 9:00 - 18:00，週六、週日彈性回覆
+                        <br> ▍霍曼Taiwan FB：https://www.facebook.com/HomerunpetTW
+                        <br> ▍霍曼instagram：https://www.instagram.com/homerunpettw/
+                        <br> ▍霍曼官方LINE @：https://lin.ee/i0NNWiB
+                        <br> ▍霍曼E-MAIL：hi@ihomerunpet.com
+                    </p>
+                </section>
+
+                <section class="pt-navfix" id="sec-4">
+                    <h5 class="mb-3">營業人登記資訊</h5>
+                    <p>
+                        營業人名稱：晴山實業有限公司
+                        <br> 統一編號：61929780
+                    </p>
+                </section>
+
+                <div class="border p-3 mt-5">
+                    <p class="text-center mb-0 lh-lg">對計畫還有其他疑問嗎？請見 <a style="color: blue;" href="#">常見問答</a>
+                        。
+                        <br> 認為此專案有違規或不適合嘖嘖使用者的地方嗎？請
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaU7UXuvQdUffMENWn7O6FaA0suIdesHwrjXcDxqEdrrSuRQ/viewform"
+                            style="color: blue;">填寫表單</a>
+                        協助我們檢查。
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-lg-4">
+
+                <a href="buy-1.html" class="">
+
+                    <div class="border-active rounded-1 p-3 mb-3">
+
+                        <img src="./img/onSaleBanner-1.webp" class="img-fluid" alt="">
+
+                        <p>嘖嘖限定不鏽鋼單入</p>
+
+                        <h6><strong>NT$2,290</strong>
+                            <span class="badge text-bg-warning">65折</span>
+                        </h6>
+
+                        <p>
+                            <small style="    letter-spacing:0px;">
+                                預定售價 <del>NT$ 3,480</del> ，現省 NT$ 1,190
+                            </small>
+                            <br>
+                            <small class="">
+                                <span class="badge text-bg-danger">剩餘 32 份</span>
+                                <span class="badge text-bg-light">已被贊助 188 / 220 次</span>
+                            </small>
+                            <br>
+                        </p>
+
+                        <p>
+                            <small class="">
+                                本組內容物包含：
+                                <br> ✅ 餵食器本體 x 1
+                                <br> ✅ 不鏽鋼碗 x 1
+                                <br> ✅ 乾燥劑 x 1
+                                <br><br>※如需統編，請在備註欄留下抬頭&統編
+                            </small>
+                        </p>
+
+
+                        <hr>
+
+                        <small>
+                            可選擇加購商品
+                            <br> 臺灣本島免運、可寄離島
+                            <br> 可寄送至 香港、澳門
+                        </small>
+
+                        <hr>
+                        <p class="text-center m-0">
+                            <small><i class="bi bi-calendar3-week me-1"></i>預計於 2023 年四月實現</small>
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="buy-1.html" class="">
+
+                    <div class="border-active rounded-1 p-3 mb-3">
+
+                        <img src="./img/onSaleBanner-2.webp" class="img-fluid" alt="">
+
+                        <p>嘖嘖限定不鏽鋼單入</p>
+
+                        <h6><strong>NT$2,290</strong>
+                            <span class="badge text-bg-warning">65折</span>
+                        </h6>
+
+                        <p>
+                            <small style="    letter-spacing:0px;">
+                                預定售價 <del>NT$ 3,480</del> ，現省 NT$ 1,190
+                            </small>
+                            <br>
+                            <small class="">
+                                <span class="badge text-bg-danger">剩餘 32 份</span>
+                                <span class="badge text-bg-light">已被贊助 188 / 220 次</span>
+                            </small>
+                            <br>
+                        </p>
+
+                        <p>
+                            <small class="">
+                                本組內容物包含：
+                                <br> ✅ 餵食器本體 x 1
+                                <br> ✅ 不鏽鋼碗 x 1
+                                <br> ✅ 乾燥劑 x 1
+                                <br><br>※如需統編，請在備註欄留下抬頭&統編
+                            </small>
+                        </p>
+
+
+                        <hr>
+
+                        <small>
+                            可選擇加購商品
+                            <br> 臺灣本島免運、可寄離島
+                            <br> 可寄送至 香港、澳門
+                        </small>
+
+                        <hr>
+                        <p class="text-center m-0">
+                            <small><i class="bi bi-calendar3-week me-1"></i>預計於 2023 年四月實現</small>
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="buy-1.html" class="">
+
+                    <div class="border-active rounded-1 p-3 mb-3">
+
+                        <img src="./img/onSaleBanner-3.webp" class="img-fluid" alt="">
+
+                        <p>嘖嘖限定不鏽鋼單入</p>
+
+                        <h6><strong>NT$2,290</strong>
+                            <span class="badge text-bg-warning">65折</span>
+                        </h6>
+
+                        <p>
+                            <small style="    letter-spacing:0px;">
+                                預定售價 <del>NT$ 3,480</del> ，現省 NT$ 1,190
+                            </small>
+                            <br>
+                            <small class="">
+                                <span class="badge text-bg-danger">剩餘 32 份</span>
+                                <span class="badge text-bg-light">已被贊助 188 / 220 次</span>
+                            </small>
+                            <br>
+                        </p>
+
+                        <p>
+                            <small class="">
+                                本組內容物包含：
+                                <br> ✅ 餵食器本體 x 1
+                                <br> ✅ 不鏽鋼碗 x 1
+                                <br> ✅ 乾燥劑 x 1
+                                <br><br>※如需統編，請在備註欄留下抬頭&統編
+                            </small>
+                        </p>
+
+
+                        <hr>
+
+                        <small>
+                            可選擇加購商品
+                            <br> 臺灣本島免運、可寄離島
+                            <br> 可寄送至 香港、澳門
+                        </small>
+
+                        <hr>
+                        <p class="text-center m-0">
+                            <small><i class="bi bi-calendar3-week me-1"></i>預計於 2023 年四月實現</small>
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="blockquote-footer mt-5 mb-0">
+        <div class="container ">
+            <div class="row py-5">
+                <section class="col-3 ">
+                    <img src="./img/logo-02.svg" width="30px" class="me-1 logo-run" id="logo-run">
+                    <img src="./img/logo-01.svg" width="40px">
+                </section>
+                <section class="col-3 ">
+                    <p class="footer-title">幫助</p>
+                    <a target="_blank" href="mb-2">常見問題</a><br>
+                    <a target="_blank" href="mb-2">使用條款</a><br>
+                    <a target="_blank" href="">隱私權政策</a>
+                </section>
+                <section class="col-3 ">
+                    <p class="footer-title">關於</p>
+                    <a target="_blank" href="mb-2">關於我們</a><br>
+                    <a target="_blank" href="mb-2">商標資源</a><br>
+                    <a target="_blank" href="">KKFARM 音樂創生</a><br>
+                </section>
+                <section class="col-3 ">
+                    <a target="_blank" href="#"><i class="bi bi-facebook fs-2"></i></a>
+                    <a target="_blank" href="#"><i class="bi bi-line fs-2"></i></i></a>
+                    <a target="_blank" href="#"><i class="bi bi-youtube fs-2"></i></a>
+                    <a target="_blank" href="#"><i class="bi bi-twitter fs-2"></i></a>
+                    <a target="_blank" href="#"><i class="bi bi-instagram fs-2"></i></a>
+                </section>
+            </div>
+
+
+
+        </div>
+
+        <p class="text-center mb-0 py-4 border-top"><sup>© 嘖室股份有限公司</sup></p>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
+    <script>
+
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+
+
+
+</body>
+
+</html>

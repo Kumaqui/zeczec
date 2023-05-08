@@ -1,0 +1,413 @@
+/* 全域基礎設定 */
+
+/* google字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 10pt;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+i:hover {
+    color: green;
+}
+
+p {
+    font-size: 10pt;
+    color: rgb(75 85 99);
+}
+
+
+/* input判斷設定 */
+
+
+
+/* 02-02. :invalid 驗證不通過時的樣式設定 */
+input[type="email"]:invalid,
+input[type="text"]:invalid,
+input[type="tel"]:invalid {
+
+    border-color: red;
+}
+
+/* 03-01. 驗證通過時 輸入框後面顯示 ✓ */
+input[type="email"]:valid+span::before,
+input[type="text"]:valid+span::before,
+input[type="tel"]:valid+span::before,
+input[type="userPassword"]:valid+span::before {
+    content: "✓";
+    color: rgb(122, 130, 236);
+}
+
+
+/* 03-02. 驗證不通過時 輸入框後面顯示 ✖ */
+input[type="email"]:invalid+span::after,
+input[type="text"]:invalid+span::after,
+input[type="tel"]:invalid+span::after {
+    content: "✖";
+    color: red;
+}
+
+
+
+
+
+
+
+/* 特別設定 */
+.card>.badge {
+    width: 100px;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.banner-tag {
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+}
+
+.fs-08 {
+    font-size: 8pt;
+}
+
+.fs-10 {
+    font-size: 10pt;
+}
+
+.fs-12 {
+    font-size: 12pt;
+}
+
+.card-title {
+    font-weight: 400;
+    line-height: 22pt;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.nav-btn-outline-success {
+    color: rgb(82 82 82);
+    background-color: rgb(244 244 245);
+    border-radius: 0px;
+}
+
+.nav-btn-outline-success:hover {
+    color: #696969;
+    background-color: hsl(0, 0%, 89%);
+}
+
+.fb-btn {
+    color: rgb(24 119 242);
+    font-weight: 700;
+}
+
+.navbar {
+    font-size: 11pt;
+}
+
+
+.logo-run {
+    animation-name: logo-run
+}
+
+.logo-run:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.nav-btn {
+    border: none;
+    padding: 7px 15px;
+}
+
+.img:hover {
+    clear: inherit;
+
+}
+
+.project {
+    margin-top: 50px;
+    position: relative;
+
+
+}
+
+.project-title {
+    position: absolute;
+    top: -10px;
+    left: 44%;
+    background-color: #fff;
+    padding: 0px 10px;
+    color: rgb(82 82 82);
+}
+
+footer>.footer-title {
+    color: #dbdbdb;
+}
+
+
+.bg-proposal {
+    background-image: url(../img/asset_572877_image_big.webp);
+    width: 100%;
+    height: 500px;
+}
+
+
+
+/* .image-text {
+    background-image: url('../img/123.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 50px;
+
+} */
+
+.proposal-text-in {
+    padding: 20px;
+    background-color: #fff;
+    color: #696969;
+    border: 2px solid #000;
+    border-radius: 6px;
+
+}
+
+.proposal-text-in>h2 {
+    font-weight: 500;
+    font-size: 19pt;
+}
+
+.proposal-text-in>h2>span {
+    font-weight: 200;
+    font-size: 11pt;
+}
+
+.proposal-text-out {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    top: 50;
+}
+
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-text img {
+    max-width: 100%;
+}
+
+
+.title-green {
+    display: inline-flex;
+    /* 讓 h5 標籤變成行內的彈性框 */
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平居中 */
+    text-align: center;
+    /* 將文字水平置中 */
+    position: relative;
+    /* 設置底線的相對位置 */
+    /* 其他樣式設置 */
+    padding-bottom: 9px;
+}
+
+.title-green::after {
+    content: '';
+    /* 用偽元素來生成底線 */
+    position: absolute;
+    /* 設置絕對位置 */
+    bottom: 0;
+    /* 置底 */
+    left: 0;
+    /* 與父元素左邊對齊 */
+    width: 100%;
+    /* 設置底線寬度為 100% */
+    border-bottom: 4px solid #1bbb51;
+    /* 設置底線樣式 */
+}
+
+.text-green {
+    color: #1bbb51;
+}
+
+.check-green::before {
+    content: "✔";
+    /* 設置偽元素內容為一個打勾符號 */
+    display: inline-block;
+    /* 讓偽元素顯示為行內元素 */
+    margin-right: 5px;
+    /* 設置偽元素和段落之間的間距 */
+    color: green;
+    /* 設置偽元素顏色為綠色 */
+    font-weight: bold;
+    /* 設置偽元素文字加粗 */
+}
+
+.check-blue::before {
+    content: "✔";
+    /* 設置偽元素內容為一個打勾符號 */
+    display: inline-block;
+    /* 讓偽元素顯示為行內元素 */
+    margin-right: 5px;
+    /* 設置偽元素和段落之間的間距 */
+    color: blue;
+    /* 設置偽元素顏色為綠色 */
+    font-weight: bold;
+    /* 設置偽元素文字加粗 */
+}
+
+.check-warning::before {
+    content: "✔";
+    /* 設置偽元素內容為一個打勾符號 */
+    display: inline-block;
+    /* 讓偽元素顯示為行內元素 */
+    margin-right: 5px;
+    /* 設置偽元素和段落之間的間距 */
+    color: rgb(160 99 137);
+    /* 設置偽元素顏色為綠色 */
+    font-weight: bold;
+    /* 設置偽元素文字加粗 */
+}
+
+.card-body {
+    color: rgb(54, 54, 54);
+}
+
+/* 
+.input-group > .form-control {
+    position: relative;
+    flex: inherit;
+    width: 25%;
+    min-width: 0;
+} */
+
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+}
+
+.btn-secondary:hover {
+    background-color: #e4e4e4;
+    color: #000;
+}
+
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.your-selector {
+    cursor: help;
+}
+
+.your-selector:active {
+    cursor: help;
+}
+
+#mynavbarNav .nav-item {
+    margin-right: 30px;
+}
+
+#mynavbarNav .nav-link {
+    padding: 20px 0px;
+}
+
+#mynavbarNav .nav-item>a {
+    text-decoration: none;
+}
+
+#mynavbarNav .nav-item:hover {
+    border-bottom: 1px solid #000;
+}
+
+#mynavbarNav .nav-item .active {
+    border-bottom: 1px solid #000;
+}
+
+
+#mynav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 8px;
+    padding: 5px 10px;
+    opacity: 0.65;
+}
+
+.pt-navfix {
+    padding-top: 6rem;
+}
+
+.border-active {
+    border: 2px var(--bs-border-style) var(--bs-border-color);
+    border-radius: ;
+}
+
+a .border-active:hover {
+    border: 2px solid #1bbb51;
+}
+
+.form-check {
+    padding: 8px 15px;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-top: 15px;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.tab-pane {
+    border: 1px solid #f5f5f5;
+    padding: 10px;
+}
+
+.bg-login {
+    background-image: url(../img/login-gb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: 100%,100%; */
+}
+
+.multi-line-truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flex-column .nav-link:hover {
+   background-color: #f5f5f5; 
+}
+
+.bg-gray{
+    background-color:rgb(244 244 245) ;
+}
